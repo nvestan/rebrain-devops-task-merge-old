@@ -1,11 +1,12 @@
 package main
 
 import (
-    "fmt"
-    "log"
-    "net/http"
+	"fmt"
+	"log"
+	"net/http"
 	"strconv"
 )
+
 
 func sendResponse(w http.ResponseWriter, r *http.Request) {
   keys, ok := r.URL.Query()["a"]
@@ -40,6 +41,7 @@ func main() {
 }
 
 func sum (a, b int) int {
-  t := b + a
-  return t
+  	t := a + b
+	return t
+
 }
